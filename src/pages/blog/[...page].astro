@@ -23,4 +23,5 @@ const { page } = Astro.props;
 
 <Layout>
   {page.data.map((post) => <BlogPostPreview post={post} />)}
+  <Footer />
 </Layout>

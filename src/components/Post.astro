@@ -1,0 +1,12 @@
+---
+import Layout from "@globals/Layout.astro";
+
+const { frontmatter } = Astro.props
+---
+
+<Layout>
+  {frontmatter.image && <img src={frontmatter.image} alt={frontmatter.imageAlt} class="max-w-full h-auto" />}
+  <h1 class="text-4xl">{frontmatter.title}</h1>
+  <time class="text-lg text-gray-600">{frontmatter.publishDate}</time>
+  <slot />
+</Layout>

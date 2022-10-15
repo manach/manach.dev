@@ -1,0 +1,10 @@
+---
+const { post } = Astro.props
+---
+
+<a href={post.url}>
+  {post.image && <img src={post.image} class="max-w-sm h-auto" alt={post.imageAlt} />}
+  <h1 class="text-4xl">{post.title}</h1>
+  <time class="text-lg text-gray-600">{post.publishDate}</time>
+  <p>{post.description}</p>
+</a>

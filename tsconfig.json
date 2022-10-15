@@ -1,0 +1,10 @@
+{
+  // "extends": "astro/tsconfigs/base",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@globals/*": ["src/components/global/*"],
+      "@components/*": ["src/components/*"]
+    }
+  }
+}

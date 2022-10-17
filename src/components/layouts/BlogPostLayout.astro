@@ -1,0 +1,20 @@
+---
+import Layout from "@globals/Layout.astro";
+import Footer from "@globals/Footer.astro";
+
+const { frontmatter } = Astro.props
+---
+
+<Layout>
+  
+  <div class="flex justify-center">
+    
+    <article class="prose lg:prose-xl prose-h6:text-gray-500 prose-ul: marker:text-gray-700">
+      {frontmatter.image && <img src={frontmatter.image} alt={frontmatter.imageAlt} class="max-w-full h-auto" />}
+      <h1>{frontmatter.title}</h1>
+      <h2>{frontmatter.description}</h2>
+      <h6>{frontmatter.publishDate}</h6>
+      <slot />
+    </article>
+  </div>
+</Layout>

@@ -1,4 +1,7 @@
 ---
+import Navbar from "./Navbar.astro";
+import Footer from "./Footer.astro";
+
 const { title, ogTitle, description, image, imageAlt } = Astro.props;
 ---
 
@@ -9,6 +12,7 @@ const { title, ogTitle, description, image, imageAlt } = Astro.props;
     <title>{title}</title>
     <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/src/styles/global.css">
 
     <meta property="og:title" content={ogTitle} />
     <meta property="og:type" content="website" />
@@ -16,9 +20,11 @@ const { title, ogTitle, description, image, imageAlt } = Astro.props;
     <meta property="og:image" content={image} />
     <meta property="og:image:alt" content={imageAlt} />
   </head>
-  <body>
+  <body class="bg-gray-50">
+    <Navbar />
     <main>
       <slot />
     </main>
+    <Footer />
   </body>
 </html>

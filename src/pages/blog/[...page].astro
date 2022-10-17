@@ -3,6 +3,7 @@ import Layout from "@globals/Layout.astro"
 import Navbar from "@globals/Navbar.astro";
 import Footer from "@globals/Footer.astro";
 import BlogPostPreview from "@components/BlogPostPreview.astro";
+import BlogPostPreviewLayout from "@components/layouts/BlogPostPreviewLayout.astro";
 
 export const getStaticPaths = async ({paginate}) => {
   const posts = await Astro.glob('./*.md').then(
@@ -22,6 +23,7 @@ const { page } = Astro.props;
 ---
 
 <Layout>
-  {page.data.map((post) => <BlogPostPreview post={post} />)}
-  <Footer />
+    <BlogPostPreviewLayout>
+      {page.data.map((post) => <BlogPostPreview post={post} />)}
+    </BlogPostPreviewLayout>
 </Layout>

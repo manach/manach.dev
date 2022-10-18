@@ -3,7 +3,7 @@ layout: "@layouts/BlogPostLayout.astro"
 title: 30 days of webdev, day 1 
 description: Finding my way around Astro
 publishDate: Monday, Oct 17, 2022
-image: "./src/assets/img/astro-logo.png"
+image: "./src/assets/astro-logo.png"
 imageAlt: The Astro SSG logo
 ---
 

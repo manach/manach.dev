@@ -3,7 +3,7 @@ layout: "@layouts/BlogPostLayout.astro"
 title: 30 days of webdev, day 3
 description: Hyperfocus and a couple long fights
 publishDate: Monday, Oct 17, 2022
-image: "./src/assets/tailwindLogo.png"
+image: "../src/assets/tailwindLogo.png"
 imageAlt: The Tailwind CSS logo
 ---
 

@@ -1,6 +1,5 @@
 ---
 import Layout from "@globals/Layout.astro";
-import Footer from "@globals/Footer.astro";
 import { Image, Picture } from '@astrojs/image/components';
 
 const { frontmatter } = Astro.props
@@ -11,7 +10,7 @@ const { frontmatter } = Astro.props
   <div class="flex justify-center">
     
     <article class="prose lg:prose-xl prose-h6:text-gray-500 prose-ul: marker:text-gray-700">
-      <Image src={frontmatter.image} alt={frontmatter.imageAlt} width={200} class="max-w-full h-auto" />
+      <Image src={frontmatter.image} width={600} height={600} alt={frontmatter.imageAlt} class="max-w-full h-auto" />
       <h1>{frontmatter.title}</h1>
       <h2>{frontmatter.description}</h2>
       <h6>{frontmatter.publishDate}</h6>

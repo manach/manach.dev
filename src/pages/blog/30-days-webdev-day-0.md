@@ -3,7 +3,7 @@ layout: "@layouts/BlogPostLayout.astro"
 title: 30 days of webdev, day 0 
 description: Why 30 days of webdev, and why I chose the tools I did
 publishDate: Monday, Oct 17, 2022
-image: "@images/astro-logo.png"
+image: "../../assets/astro-logo.png"
 imageAlt: The Astro SSG logo
 ---
 

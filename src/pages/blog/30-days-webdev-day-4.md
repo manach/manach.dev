@@ -18,6 +18,8 @@ I may do the navbar and footer today. I may not. Right now it's break time.
 
 Update: I got a responsive navbar working 🔥
 
+<!-- markdownlint-disable -->
 <div class="flex items-center justify-center">
   <img class="prose prose-img:max-w-full h-auto object-center" src="../../assets/wolverines.jpg" alt="A young white man in secondhand camo stands on a ridgeline, brandishing an AK-47. The caption reads, 'Wolverines!'" />
 </div>
+<!-- markdownlint-enable -->

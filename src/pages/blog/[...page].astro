@@ -1,8 +1,6 @@
 ---
 import Layout from "@globals/Layout.astro"
-import Navbar from "@globals/Navbar.astro";
-import Footer from "@globals/Footer.astro";
-import BlogPostPreview from "@components/BlogPostPreview.astro";
+import BlogPostPreviewCard from "@components/BlogPostPreviewCard.astro";
 import BlogPostPreviewLayout from "@components/layouts/BlogPostPreviewLayout.astro";
 
 export const getStaticPaths = async ({paginate}) => {
@@ -24,6 +22,6 @@ const { page } = Astro.props;
 
 <Layout>
     <BlogPostPreviewLayout>
-      {page.data.map((post) => <BlogPostPreview post={post} />)}
+      {page.data.map((post) => <BlogPostPreviewCard post={post} />)}
     </BlogPostPreviewLayout>
 </Layout>

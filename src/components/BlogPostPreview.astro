@@ -6,9 +6,9 @@ const { post } = Astro.props
 
 <a href={post.url}>
   <div class="mt-4 mb-4 max-w-sm">
-    {post.image && <img src={post.image} class="object-cover w-96 h-96" alt={post.imageAlt} />}
+    {post.image && <img src={post.image} class="object-cover w-96 h-48 rounded-lg" alt={post.imageAlt} />}
     <h1 class="text-3xl">{post.title}</h1>
-    <time class="text-lg text-gray-500">{post.publishDate}</time>
-    <p>{post.description}</p>
+    <time class="text-lg text-gray-400">{post.publishDate}</time>
+    <h3 class="text-2xl">{post.description}</h3>
   </div>
 </a>

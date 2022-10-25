@@ -5,11 +5,17 @@ import { Image, Picture } from '@astrojs/image/components';
 const { frontmatter } = Astro.props
 ---
 
-<Layout>
+<Layout
+  title={frontmatter.title}
+  description={frontmatter.description}
+  ogTitle={frontmatter.description} 
+  image={frontmatter.image}
+  imageAlt={frontmatter.imageAlt}  
+  >
   
   <div class="flex justify-center">
     
-    <article class="prose prose-p:text-gray-300 lg:prose-xl  prose-h6:text-gray-400 prose-headings:text-gray-300 prose-ul:marker:text-gray-400 prose-li:text-gray-300 prose-a:text-gray-300">
+    <article class="prose prose-p:text-gray-300 lg:prose-xl  prose-h6:text-gray-400 prose-headings:text-gray-300 prose-ul:marker:text-gray-300 prose-li:text-gray-300 prose-a:text-gray-300 prose-ol:text-gray-300 prose-li:text-gray-300">
       <img src={frontmatter.image} alt={frontmatter.imageAlt} class="max-w-full h-auto rounded-lg" />
       <h1>{frontmatter.title}</h1>
       <h2>{frontmatter.description}</h2>

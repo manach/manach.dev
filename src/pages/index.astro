@@ -6,14 +6,12 @@ import Hero from "@components/Hero.astro"
 ---
 
 <Layout title="Chris Scott" description="personal website of Chris Scott, programmer" ogTitle="Chris Scott">
-	<div class="flex">
 		<Hero headline="Chris Scott, programmer" subheading="This was probably a mistake"/>
-		<section class="justify-start justify-items-start">
-			<h1 class="text-4xl">Projects</h1>
-			<h3 class="text-2xl">SaferAWS</h3>
-			<h3 class="text-2xl">Forrest Brazeal's Cloud Challenge</h3>
-			<h3 class="text-2xl">Learn Go Deliberately</h3>
+		
+		<h1 class="text-4xl flex justify-center mt-4">Projects</h1>
+		<section class="w-full flex flex-wrap justify-around mt-4">
+			<h3 class="text-2xl min-w- justify-between">SaferAWS</h3>
+			<h3 class="text-2xl justify-between">Forrest Brazeal's Cloud Challenge</h3>
+			<h3 class="text-2xl justify-between">Learn Go Deliberately</h3>
 		</section>
-	</div>
-	
 </Layout>

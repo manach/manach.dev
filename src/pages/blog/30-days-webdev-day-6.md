@@ -7,7 +7,7 @@ image: "../../assets/wereGonnaGetThroughThis.jpg"
 imageAlt: A young white man looks determinedly off-camera. The caption reads, 'We're gonna get through this.'
 ---
 
-I have ADHD (and autism, but that's another post). It's wreaked a ton of havoc in my life, in large part because I didn't even know I had it until pretty recently. Among many other things, ADHD makes task inertia very difficult to deal with. This means that it's hard for me to get started on tasks, and it also means that once I get started and slip into hyperfocus it's difficult to stop.
+I have ADHD. It's wreaked a ton of havoc in my life, in large part because I didn't even know I had it until pretty recently. Among many other things, ADHD makes task inertia very difficult to deal with. This means that it's hard for me to get started on tasks, and it also means that once I get started and slip into hyperfocus it's difficult to stop.
 
 So I'm pretty proud of myself for picking this back up again. I've added og meta fields to each blog post page as a concrete webdev win for today, and now I'm going to think about how I'm going about all this.
 
